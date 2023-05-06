@@ -25,8 +25,8 @@ import 'package:google_fonts/google_fonts.dart';
           ),  // islami
         bodyMedium: GoogleFonts.elMessiri  (
               color: Color(0xff242424),
-              fontSize: 30,
-              fontWeight: FontWeight.w700
+              fontSize: 25,
+              fontWeight: FontWeight.w500
           ),  // Ahadeth  - SuraName
         bodySmall: GoogleFonts.elMessiri  (
             color: Color(0xff242424),
@@ -47,7 +47,7 @@ import 'package:google_fonts/google_fonts.dart';
 
       ),
   );
-  static ThemeData Dark=ThemeData(
+  static ThemeData dark=ThemeData(
     scaffoldBackgroundColor: Colors.transparent,
     primaryColor: DarkColor,
     appBarTheme: AppBarTheme(
@@ -67,8 +67,8 @@ import 'package:google_fonts/google_fonts.dart';
       ),  // islami
       bodyMedium: GoogleFonts.elMessiri  (
           color: Colors.white,
-          fontSize: 30,
-          fontWeight: FontWeight.w700
+          fontSize: 25,
+          fontWeight: FontWeight.w500
       ),  // Ahadeth  - SuraName
       bodySmall: GoogleFonts.elMessiri  (
           color: Colors.white,

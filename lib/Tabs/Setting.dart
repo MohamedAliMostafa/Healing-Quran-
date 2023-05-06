@@ -59,7 +59,7 @@ class  SettingTab extends StatelessWidget {
             ),
             child:Padding(
               padding: const EdgeInsets.all(9.0),
-              child: Text(pot.themeData==Themedata.light?AppLocalizations.of(context)!.light:AppLocalizations.of(context)!.dark,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+              child: Text(pot.themeData==ThemeMode.light?AppLocalizations.of(context)!.light:AppLocalizations.of(context)!.dark,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
             ),),
         ),
       ],

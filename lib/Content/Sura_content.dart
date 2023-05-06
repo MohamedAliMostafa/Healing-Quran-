@@ -34,7 +34,7 @@ class _Sura_contentState extends State<Sura_content> {
         var p_logic=Provider.of<Logic>(context);
         return Container(
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(pt.themeData==Themedata.light?"assets/images/bg3.png":"assets/images/bg.png"),fit: BoxFit.fill),
+              image: DecorationImage(image: AssetImage(pt.themeData==ThemeMode.light?"assets/images/bg3.png":"assets/images/bg.png"),fit: BoxFit.fill),
             ),
             child:Scaffold(
               appBar: AppBar(
@@ -48,7 +48,7 @@ class _Sura_contentState extends State<Sura_content> {
                   Expanded(
                     child: ListView.builder(itemBuilder: (context,index){
                       return Card(
-                        color: pt.themeData==Themedata.light?Colors.white:Color(0xff141A2E),
+                        color: pt.themeData==ThemeMode.light?Colors.white:Color(0xff141A2E),
                         elevation: 7,
                         shadowColor: Theme.of(context).primaryColor,
                         child: Center(

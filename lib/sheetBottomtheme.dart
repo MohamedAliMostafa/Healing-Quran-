@@ -12,7 +12,6 @@ class SheetBottomTheme extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var p=Provider.of<MyProvider>(context);
     var pt=Provider.of<Mytheme>(context);
     return Container(
       child: Column(children: [
@@ -20,7 +19,7 @@ class SheetBottomTheme extends StatelessWidget {
         InkWell(
           onTap: ()
           {
-pt.Changetheme(Themedata.Dark);
+pt.Changetheme(ThemeMode.dark);
 Navigator.pop(context);
           },
           child: Container(
@@ -28,9 +27,9 @@ Navigator.pop(context);
             child: Row(
               children: [
 
-                Text(AppLocalizations.of(context)!.dark,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15,color: pt.themeData==Themedata.Dark?Theme.of(context).primaryColor:Colors.black54),),
+                Text(AppLocalizations.of(context)!.dark,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15,color: pt.themeData!=ThemeMode.light?Theme.of(context).primaryColor:Colors.black54),),
                 Spacer(),
-                Icon(Icons.done_outline_rounded,color: pt.themeData==Themedata.Dark?Theme.of(context).primaryColor:Colors.black54 ,),
+                Icon(Icons.done_outline_rounded,color: pt.themeData!=ThemeMode.light?Theme.of(context).primaryColor:Colors.black54 ,),
               ],
             ),
           ),
@@ -38,7 +37,7 @@ Navigator.pop(context);
         SizedBox(height: 20,),
         InkWell(
           onTap: (){
-            pt.Changetheme(Themedata.light);
+            pt.Changetheme(ThemeMode.light);
             Navigator.pop(context);
           },
           child: Container(
@@ -46,9 +45,9 @@ Navigator.pop(context);
             child: Row(
               children: [
 
-                Text(AppLocalizations.of(context)!.light,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15,color:  pt.themeData==Themedata.light?Theme.of(context).primaryColor:Colors.black),),
+                Text(AppLocalizations.of(context)!.light,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15,color:  pt.themeData==ThemeMode.light?Theme.of(context).primaryColor:Colors.black),),
                 Spacer(),
-                Icon(Icons.done_outline_rounded,color:  pt.themeData==Themedata.light?Theme.of(context).primaryColor:Colors.black,),
+                Icon(Icons.done_outline_rounded,color: pt.themeData==ThemeMode.light?Theme.of(context).primaryColor:Colors.black,),
               ],
             ),
           ),
