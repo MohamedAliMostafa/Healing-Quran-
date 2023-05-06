@@ -45,14 +45,14 @@ class _SebaTabState extends State<SebaTab> {
               });
 
             },
-            child: Image(image: AssetImage(pt.themeData==Themedata.light?"assets/images/imageSebha.png":"assets/images/Group 8.png"),height: 250,)),
+            child: Image(image: AssetImage(pt.themeData==ThemeMode.light?"assets/images/imageSebha.png":"assets/images/Group 8.png"),height: 250,)),
         Divider(),
         Text("عدد التسبيحات",style: Theme.of(context).textTheme.bodySmall,),
         SizedBox(height:15 ,),
         Container(
           padding: EdgeInsets.all(10),
           decoration: BoxDecoration(
-            color:pt.themeData==Themedata.light? Color(0XFFB7935F).withOpacity(0.6):Color(0XFF141A2E).withOpacity(0.9),
+            color:pt.themeData==ThemeMode.light? Color(0XFFB7935F).withOpacity(0.6):Color(0XFF141A2E).withOpacity(0.9),
             borderRadius: BorderRadius.circular(18),
           ),
           child:Text("$numSeb",style: Theme.of(context).textTheme.bodyLarge,),
