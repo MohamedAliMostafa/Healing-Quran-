@@ -28,7 +28,7 @@ List<Widget>tabs=[RadioTab(),SebaTab(),HadethTab(),QuranTab(),SettingTab()];
     var pt= Provider.of<Mytheme>(context);
     return Container(
       decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage(pt.themeData==Themedata.light?"assets/images/bg3.png":"assets/images/bg.png"),fit: BoxFit.fill),
+          image: DecorationImage(image: AssetImage(pt.themeData==ThemeMode.light?"assets/images/bg3.png":"assets/images/bg.png"),fit: BoxFit.fill),
       ),
       child:Scaffold(
           appBar: AppBar(
