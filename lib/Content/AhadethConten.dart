@@ -30,9 +30,9 @@ class _AhadethContentState extends State<AhadethContent> {
           body: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 40,),
+                const SizedBox(height: 40,),
                 Text(arg.title,style: Theme.of(context).textTheme.bodyLarge,),
-                Divider(height: 2,thickness: 2,indent: 100,endIndent: 100,),
+                const Divider(height: 2,thickness: 2,indent: 100,endIndent: 100,),
                 Card(
                   margin: EdgeInsets.symmetric(horizontal: 14,vertical: 16),
                   elevation: 12,

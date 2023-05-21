@@ -17,7 +17,7 @@ class  SettingTab extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(height: 40,),
+        const SizedBox(height: 40,),
        Padding(
          padding: const EdgeInsets.all(8.0),
          child: Text(AppLocalizations.of(context)!.language,textAlign: TextAlign.start,style: GoogleFonts.elMessiri(
@@ -39,7 +39,7 @@ class  SettingTab extends StatelessWidget {
              child: Text(po.language=="ar"?AppLocalizations.of(context)!.arabic:AppLocalizations.of(context)!.english,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
            ),),
        ),
-        SizedBox(height: 40,),
+        const SizedBox(height: 40,),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(AppLocalizations.of(context)!.themeing,textAlign: TextAlign.start,style: GoogleFonts.elMessiri(

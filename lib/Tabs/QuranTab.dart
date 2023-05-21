@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:islami/Model/SuraModel.dart';
 import 'package:islami/Content/Sura_content.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -20,7 +19,7 @@ List<String>Sura_name=["الفاتحه","البقرة","آل عمران","الن
   Widget build(BuildContext context) {
     return Column(
       children: [
-      Image(image: AssetImage("assets/images/Screenshot (1).png")),
+      const Image(image: AssetImage("assets/images/Screenshot (1).png")),
         Divider(height: 2,thickness: 2,color: Theme.of(context).primaryColor,),
         Text(AppLocalizations.of(context)!.sura_name,style: Theme.of(context).textTheme.bodyMedium,),
         Divider(height: 2,thickness: 2,color: Theme.of(context).primaryColor,),

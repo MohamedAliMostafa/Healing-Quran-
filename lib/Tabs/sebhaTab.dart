@@ -46,9 +46,9 @@ class _SebaTabState extends State<SebaTab> {
 
             },
             child: Image(image: AssetImage(pt.themeData==ThemeMode.light?"assets/images/imageSebha.png":"assets/images/Group 8.png"),height: 250,)),
-        Divider(),
+        const Divider(),
         Text("عدد التسبيحات",style: Theme.of(context).textTheme.bodySmall,),
-        SizedBox(height:15 ,),
+        const SizedBox(height:15 ,),
         Container(
           padding: EdgeInsets.all(10),
           decoration: BoxDecoration(
@@ -57,7 +57,7 @@ class _SebaTabState extends State<SebaTab> {
           ),
           child:Text("$numSeb",style: Theme.of(context).textTheme.bodyLarge,),
         ),
-        SizedBox(height:15 ,),
+        const SizedBox(height:15 ,),
         Container(
           padding: EdgeInsets.all(10),
           decoration: BoxDecoration(

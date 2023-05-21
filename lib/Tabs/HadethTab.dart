@@ -23,7 +23,7 @@ List<AhadethModel>listAha=[];
     }
     return Column(
       children: [
-        Image(image: AssetImage("assets/images/imageAd.png")),
+        const Image(image: AssetImage("assets/images/imageAd.png")),
         Divider(height: 2,thickness: 2,color: Theme.of(context).primaryColor,),
         Text(AppLocalizations.of(context)!.ahadeth,style: Theme.of(context).textTheme.bodyMedium),
         Divider(height: 2,thickness: 2,color: Theme.of(context).primaryColor,),

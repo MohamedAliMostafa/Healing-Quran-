@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:islami/Provider/MyProvider.dart';
 import 'package:islami/Provider/Mytheme.dart';
 import 'package:islami/Tabs/HadethTab.dart';
 import 'package:islami/Tabs/QuranTab.dart';
@@ -41,16 +42,15 @@ List<Widget>tabs=[RadioTab(),SebaTab(),HadethTab(),QuranTab(),SettingTab()];
           backgroundColor: Colors.white,
           animationCurve: Curves.easeInOutCubicEmphasized,
           index: indx,
-
           onTap: (val){
             setState(() {
               indx=val;
-              print(indx);
-            });
 
+            });
           },
+
           items: [
-            Stylebtn("assets/images/radio.png", AppLocalizations.of(context)!.radio),
+            Stylebtn("assets/images/ImageRadio.png", AppLocalizations.of(context)!.radio),
             Stylebtn("assets/images/sebha.png", AppLocalizations.of(context)!.sebha),
             Stylebtn("assets/images/quran-quran-svgrepo-com.png", AppLocalizations.of(context)!.ahadeth),
             Stylebtn("assets/images/quran.png", AppLocalizations.of(context)!.quran),
