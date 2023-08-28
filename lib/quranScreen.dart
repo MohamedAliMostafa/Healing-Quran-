@@ -9,7 +9,6 @@ import 'package:islami/Tabs/Setting.dart';
 import 'package:islami/Tabs/sebhaTab.dart';
 import 'package:islami/styleBtnNavg.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:islami/themeData/ThemeData.dart';
 import 'package:provider/provider.dart';
 
 
@@ -23,6 +22,7 @@ class Quran extends StatefulWidget {
 class _QuranState extends State<Quran> {
 int indx=3;
 List<Widget>tabs=[RadioTab(),SebaTab(),HadethTab(),QuranTab(),SettingTab()];
+
 
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,6 @@ import 'package:islami/BottomSheetScreen.dart';
 import 'package:islami/Provider/MyProvider.dart';
 import 'package:islami/Provider/Mytheme.dart';
 import 'package:islami/sheetBottomtheme.dart';
-import 'package:islami/themeData/ThemeData.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
