@@ -1,11 +1,11 @@
-# islami
+# Healing-Quran
 
  **Flutter project.**
 
 ## project Screen Shots
 
 
-**Islami app "light Mode"**
+**Healing-Quran app "light Mode"**
 <table>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/132190049/235464725-30839fdd-292b-4f2e-88fe-14923301de0f.jpg" width=270 height=480></td>
